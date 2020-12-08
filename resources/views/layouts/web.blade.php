@@ -17,11 +17,23 @@
         <link rel="stylesheet" href="{{ asset('css/app.min.css') }}">
         <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/adminlte.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/adminlte.css.map') }}" rel="stylesheet">
+    <link href="{{ asset('css/adminlte.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/adminlte.min.css.map') }}" rel="stylesheet">
+    <link href="{{ asset('css/docs.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/highlighter.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/alt/adminlte.components.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/alt/adminlte.pages.css') }}" rel="stylesheet">
+    <link href="{{ asset('dist/css/alt/adminlte.pages.css') }}" rel="stylesheet">
+    <link href="{{ asset('dist/css/adminlte.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('plugins/fullcalendar/main.min.css') }}" rel="stylesheet">
+
 </head>
         <title>Empower and employ</title>
 
 
-    <body data-ma-theme="green">
+    <body data-ma-theme="indigo">
         <main class="main">
 
            @include('partials.header')
@@ -33,6 +45,8 @@
         </main>
 
         <!-- Javascript -->
+        <link href="{{ asset('plugins/fullcalendar/main.min.css') }}" rel="stylesheet">
+        <script src="{{ asset('plugins/fullcalendar/main.min.js') }}"></script>
         <!-- Vendors -->
         <script src="{{ asset('vendors/bower_components/jquery/dist/jquery.min.js') }}"></script>
         <script src="{{ asset('vendors/bower_components/popper.js/dist/umd/popper.min.js') }}"></script>

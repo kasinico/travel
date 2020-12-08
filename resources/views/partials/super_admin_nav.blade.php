@@ -1,5 +1,7 @@
 <aside class="sidebar">
     <div class="scrollbar-inner">
+        <p></p>
+        <p></p>
         <div class="user">
             <div class="user__info" data-toggle="dropdown">
                 <img class="user__img" src="demo/img/profile-pics/8.jpg" alt="">
@@ -14,12 +16,34 @@
 
             <div class="dropdown-menu">
                 <a class="dropdown-item" href="#"></a>
-                 <a class="dropdown-item" href="{{ Auth::user()->name }}">View Profile</a>
+                 <a class="dropdown-item" href="{{ url('/profile') }}">View Profile</a>
                 <a class="dropdown-item" href="#">Settings</a>
                 <a class="dropdown-item" href="">Logout</a>
             </div>
         </div>
 
+        <p></p>
+        <div class="user">
+            <div class="user__info" data-toggle="dropdown">
+                <img class="user__img" src="demo/img/profile-pics/8.jpg" alt="">
+                <div>
+                    <div class="user__name">
+                    <a role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>{{ Auth::user()->name }}</a>
+                </div>
+                    <div class="user__email">
+                        <a role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre> {{ Auth::user()->email }} </a></div>
+                </div>
+            </div>
+
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#"></a>
+                 <a class="dropdown-item" href="{{ url('/profile') }}">View Profile</a>
+                <a class="dropdown-item" href="#">Settings</a>
+                <a class="dropdown-item" href="{{ url ('/login') }}">Logout</a>
+            </div>
+        </div>
+
+        
         <ul class="navigation">
             <li class="navigation__active"><a href="{{ url('/dashboard') }}"><i class="zmdi zmdi-home"></i> Home</a></li>
 
@@ -104,7 +128,7 @@
                     <li><a href="other-charts.html">Other Charts</a></li>
                 </ul>
             </li>
-            <li><a href="calendar.html"><i class="zmdi zmdi-calendar"></i> Calendar</a></li>
+            <li><a href="{{ url('/calendar') }}"><i class="zmdi zmdi-calendar"></i> Calendar</a></li>
 
             <li><a href="photo-gallery.html"><i class="zmdi zmdi-image"></i> Photo Gallery</a></li>
 
@@ -126,7 +150,12 @@
                     <li><a href="empty.html">Empty Page</a></li>
                 </ul>
             </li>
+            
+        </div>
+
 
 
    </div>
+
 </aside>
+
