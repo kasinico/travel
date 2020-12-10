@@ -5,7 +5,7 @@
 <section class="content">
     <header class="content__title">
         <h1>Dashboard</h1>
-        <small>Welcome to the Vehicle Crime Tracking System</small>
+        <small>Welcome recruitment system System</small>
 
         <div class="actions">
             <a href="#" class="actions__item zmdi zmdi-trending-up"></a>
@@ -26,21 +26,20 @@
     <div class="row quick-stats">
         
 
-<div class="card">
+                    <div class="card col-6">
                         <div class="card-body">
                             <h4 class="card-title">With controls</h4>
-                            <h6 class="card-subtitle">Adding in the previous and next controls:</h6>
 
-                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                            <div id="carouselExampleControls" class="carousel slide" data-ride="">
                                 <div class="carousel-inner" role="listbox">
-                                    <div class="carousel-item active">
-                                        <img src="demo/img/carousel/c-1.jpg" alt="First slide">
+                                    <div class="carousel-item ">
+                                        <img src="demo/img/carousel/c-1n.jpg" alt="First slide">
                                     </div>
-                                    <div class="carousel-item">
+                                    <div class="carousel-item active">
                                         <img src="demo/img/carousel/c-2.jpg" alt="Second slide">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="demo/img/carousel/c-3.jpg" alt="Third slide">
+                                        <img src="demo/img/carousel/c-3n.jpg" alt="Third slide">
                                     </div>
                                 </div>
                                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -53,21 +52,20 @@
                         </div>
                     </div>
 					
-					<div class="card">
+					<div class="card col-6">
                         <div class="card-body">
                             <h4 class="card-title">With controls</h4>
-                            <h6 class="card-subtitle">Adding in the previous and next controls:</h6>
 
-                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                            <div id="carouselExampleControls" class="carousel slide" data-ride="">
                                 <div class="carousel-inner" role="listbox">
-                                    <div class="carousel-item active">
-                                        <img src="demo/img/carousel/baseline.png" alt="First slide">
+                                    <div class="carousel-item ">
+                                        <img src="demo/img/carousel/baselinen.png" alt="First slide">
                                     </div>
-                                    <div class="carousel-item">
+                                    <div class="carousel-item active">
                                         <img src="demo/img/carousel/c-2.jpg" alt="Second slide">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="demo/img/carousel/c-3.jpg" alt="Third slide">
+                                        <img src="demo/img/carousel/c-3n.jpg" alt="Third slide">
                                     </div>
                                 </div>
                                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -84,19 +82,11 @@
          		   <h4 class="card-title">Database Statistics</h4>
 				   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner" role="listbox">
-                                    <div class="carousel-item active">
-
-At the end of December 2017:
-
-    7.19 million records of reported stolen motor vehicles;
-    Over 256 million searches of the database during 2015;
-    126 countries share their national stolen vehicle database records with INTERPOL;
-    Around 118,000 motor vehicles were identified worldwide during the year through the SMV database.
-	</div>
-	</div>
-	</div>
-	</div>
-	</div>
+                                    <div class="carousel-item active"> At the end of December 2017: 7.19 million records of reported stolen motor vehicles; Over 256 million searches of the database during 2015; 126 countries share their national stolen vehicle database records with INTERPOL; Around 118,000 motor vehicles were identified worldwide during the year through the SMV database.</div>
+                                </div>
+	                 </div>
+	         </div>
+	    </div>
 
 
         
@@ -131,9 +121,8 @@ At the end of December 2017:
                     <div class="custom-control custom-control--char todo__item">
                         <input type="checkbox" class="custom-control-input" id="todo-1">
                         <label class="custom-control-label-char" for="todo-1">
-                            <i class="bg-amber">G</i>
                             <div class="todo__info">
-                                <span>Genocide, crimes against humanity and war crimes are the most serious crimes of concern to the international community.</span>
+                                <span><p>Genocide, crimes against humanity and waternational community.</p></span>
                                 <small>Today at 8.30 AM</small>
                             </div>
 
