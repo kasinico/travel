@@ -47,6 +47,9 @@
         <!-- Javascript -->
         <link href="{{ asset('plugins/fullcalendar/main.min.css') }}" rel="stylesheet">
         <script src="{{ asset('plugins/fullcalendar/main.min.js') }}"></script>
+        <script src="{{ asset('plugins/fullcalendar/main.esm.js') }}"></script>
+        <script src="{{ asset('plugins/fullcalendar/main.js') }}"></script>
+        <script src="{{ asset('plugins/fullcalendar/main.js.map') }}"></script>
         <!-- Vendors -->
         <script src="{{ asset('vendors/bower_components/jquery/dist/jquery.min.js') }}"></script>
         <script src="{{ asset('vendors/bower_components/popper.js/dist/umd/popper.min.js') }}"></script>
@@ -84,7 +87,12 @@
 
         <!-- App functions and actions -->
         <script src="{{ asset('js/app.min.js') }}"></script>
+        <script src="{{ asset('js/app.js') }}"></script>
+        <script src="{{ asset('dist/js/adminlte.js') }}"></script>
+        <script src="{{ asset('dist/js/adminlte.js.map') }}"></script>
+        <script src="{{ asset('dist/js/adminlte.min.js') }}"></script>
+        <script src="{{ asset('dist/js/adminlte.min.js.map') }}"></script>
+        <script src="{{ asset('dist/js/demo.js') }}"></script>
+        
     </body>
-
-<!-- Mirrored from byrushan.com/projects/ 08 Jun 2018 07:31:15 GMT -->
 </html>
