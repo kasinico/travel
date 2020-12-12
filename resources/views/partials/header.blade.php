@@ -6,10 +6,16 @@
             <i class="navigation-trigger__line"></i>
         </div>
     </div>
+    
 
     <div class="header__logo hidden-sm-down">
         
         <h1><a href="{{ url('/dashboard') }}">RECRUITMENT UGANDA LIMITED</a></h1></div>
+        <br><?php
+                echo "Time" .
+                date("h:i:sa");
+             ?>
+        
           <!-- Navbar -->
   <nav class="main-header navbar navbar-expand navbar-white navbar-light">
     <!-- Left navbar links -->
@@ -24,6 +30,7 @@
         <a href="#" class="nav-link">Contact</a>
       </li>
     </ul>
+    
 
     <!-- SEARCH FORM -->
     <form class="form-inline ml-3">

@@ -32,3 +32,7 @@ Route::get('/profile', function(){
 Route::get('/calendar', function(){
 	return view('calendar');
 });
+
+Route::get('user/{id}', 'ShowProfile');
+// If you want route to just show a certain view, don't create a Controller method, just use
+//Route::view('about', 'texts.about');

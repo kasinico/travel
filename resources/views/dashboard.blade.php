@@ -6,6 +6,7 @@
     <header class="content__title">
         <h1>Dashboard</h1>
         <small>Welcome recruitment system System</small>
+        
 
         <div class="actions">
             <a href="#" class="actions__item zmdi zmdi-trending-up"></a>
