@@ -33,6 +33,20 @@ Route::get('/calendar', function(){
 	return view('calendar');
 });
 
+//input income item route
+Route::get('/all', function(){
+	return view('all');
+});
+
+Route::get('/add', function(){
+	return view('add');
+});
+
+
 Route::get('user/{id}', 'ShowProfile');
 // If you want route to just show a certain view, don't create a Controller method, just use
 //Route::view('about', 'texts.about');
+
+//income input
+Route::post('/', 'incomesController@store')->name('incomes.store');
+Route::get('/', 'incomesController@index')->name('incomes.all');
