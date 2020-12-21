@@ -4,8 +4,8 @@
 
 <section class="content">
     <header class="content__title">
-        <h1>Dashboard</h1>
-        <small>Welcome recruitment system System</small>
+        <h1>Farm Cash Book Dashboard</h1>
+        <small>Welcome to your Farm Cash Book System</small>
         
 
         <div class="actions">

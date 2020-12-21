@@ -10,7 +10,7 @@
 
     <div class="header__logo hidden-sm-down">
         
-        <h1><a href="{{ url('/dashboard') }}">RECRUITMENT UGANDA LIMITED</a></h1></div>
+        <h1><a href="{{ url('/dashboard') }}">FARM CASH BOOK </a></h1></div>
         <br><?php
                 echo "Time" .
                 date("h:i:sa");
