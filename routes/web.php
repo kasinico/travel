@@ -47,6 +47,12 @@ Route::get('user/{id}', 'ShowProfile');
 // If you want route to just show a certain view, don't create a Controller method, just use
 //Route::view('about', 'texts.about');
 
+//home
+Auth::routes();
+Route::get('/home', 'HomeController@index')->name('home');
+
 //income input
 Route::post('/', 'incomesController@store')->name('incomes.store');
-Route::get('/', 'incomesController@index')->name('incomes.all');
+Route::get('/all', 'incomesController@index')->name('all');
+
+Route::get('/{id}/show', 'incomesController@show')->name('show');

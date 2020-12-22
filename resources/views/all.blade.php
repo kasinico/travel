@@ -48,7 +48,6 @@
                                       <th>Amount</th>
                                       <th>Image</th>
                                       <th>Reported by</th>
-                                      <th>created_at</th>
                                       <th>Options</th>
                                   </tr>
                               </thead>
@@ -62,15 +61,13 @@
                                       <th>Amount</th>
                                       <th>Image</th>
                                       <th>Reported by</th>
-                                      <th>created_at</th>
                                       <th>Options</th>
                                   </tr>
                               </tfoot>
-                              @foreach($incomes ?? '' as $ct)
+                              @foreach($data as $ct)
                               <tbody>
                                   <tr>
 								      <td>{{$ct->id}}</td>
-								      <td>{{$ct->name}}</td>
                                       <td>{{$ct->name}}</td>
                                       <td>{{$ct->date}}</td>
                                       <td>{{$ct->quantity}}</td>
@@ -78,17 +75,18 @@
                                       <td>{{$ct->amount}}</td>
                                       <td>{{$ct->image}}</td>
                                       <td>{{$ct->report}}</td>
-                                      <td>{{$ct->created_at}}</td>
                                       <td>
                                         <button class="btn btn-secondary btn-sm" data-toggle="dropdown">Options</button>
                                         <!<div class="dropdown-menu">
-                                            <a href="" class="dropdown-item">Show</a>
+                                            <a href="/{{ $ct->id }}/show" class="dropdown-item">Show</a>
                                             <a href="" class="dropdown-item">Edit</a>
 
                                         </div>
                                       </td>
                                   </tr>
                               </tbody>
+                            
+
                               @endforeach
                           </table>
             </div>
