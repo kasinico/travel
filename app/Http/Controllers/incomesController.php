@@ -8,6 +8,8 @@ use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use App\income;
+
 use Redirect;
 use Session;
 use File;
@@ -21,8 +23,8 @@ class incomesController extends Controller
      */
     public function index()
     {
-        $incomes = incomes::all()->toArray();
-        return view('all', compact('incomes'));
+        $data = income::all();
+        return view('all',['data'=>$data]);
     }
 
     /**
@@ -49,6 +51,7 @@ class incomesController extends Controller
           'quantity' => 'required|string',
           'unit' => 'required|string',
           'amount' => 'required|string',
+          'image.*' => 'image|mimes:jpeg,png,jpg|max:2000',
           'report' => 'required|string',
           'deleted' => 'required',
         ]);
@@ -68,13 +71,15 @@ class incomesController extends Controller
 
 
 
-          /*
-          if(Input::file('image')->isValid()){
+          
+          /*if(Input::file('image')->isValid()){
             $extension = Input::file('image')->getClientOriginalExtension();
             $image_name = Input::file('image')->getClientOriginalExtension();
             $fileName = time().'_.'.$image_name;
             Input::file('image')->move(public_path('uploads').'/',$fileName);
             */
+            //check for file
+          
 
             //insert array
 
@@ -113,7 +118,11 @@ class incomesController extends Controller
      */
     public function show($id)
     {
-        //
+        if($id!=''){
+            //$data_update = array('id'=>$id);
+            $data = DB::table('incomes')->where(array('id'=>$id))->get();
+            return view('show',['data'=>$data]);
+          }
     }
 
     /**
