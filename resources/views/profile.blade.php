@@ -1,14 +1,15 @@
 @extends('layouts.web')
-
+@section('title', 'Profile')
 @section('content')
 
 
 <!DOCTYPE html>
 <html>
 <head>
+<title> User Profile</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title> | User Profile</title>
+  
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -87,7 +88,7 @@
             <!-- About Me Box -->
             <div class="card card-primary">
               <div class="card-header">
-                <h3 class="card-title">About Me</h3>
+                <h3 class="card-title">About {{ Auth::user()->name }}</h3>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
@@ -105,9 +106,7 @@
 
                 <hr>
 
-                <strong><i class="far fa-file-alt mr-1"></i> Notes</strong>
 
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum enim neque.</p>
               </div>
               <!-- /.card-body -->
             </div>
@@ -334,51 +333,80 @@
                     </div>
                   </div>
                   <!-- /.tab-pane -->
+                  
 
                   <div class="tab-pane" id="settings">
-                    <form class="form-horizontal">
+                  @if(Session::has('success'))
+                    <div class="alert alert-success">
+                      <strong>{!! Session::get('success') !!}</strong>
+                    </div>
+                @endif
+
+                @if(Session::has('error'))
+                    <div class="alert alert-danger">
+                      <strong>{!! Session::get('error') !!}</strong>
+                    </div>
+                @endif
+
+                      @if (count($errors) > 0)
+                <div class="alert alert-danger">
+                    @foreach ($errors->all() as $error)
+                        <span>{{ $error }}</span><br>
+                    @endforeach
+                </div>
+              @endif
+                    <form class="form-horizontal" method="POST" action="{{ route('incomes.store') }}" enctype="multipart/form-data">
+                    @csrf
+
                       <div class="form-group row">
                         <label for="inputName" class="col-sm-2 col-form-label">Name</label>
                         <div class="col-sm-10">
-                          <input type="email" class="form-control" id="inputName" placeholder="Name">
+                          <input type="text" name="name" class="form-control" id="inputName" placeholder="Name">
                         </div>
                       </div>
                       <div class="form-group row">
-                        <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                        <label for="inputEmail" class="col-sm-2 col-form-label">Date</label>
                         <div class="col-sm-10">
-                          <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                          <input type="date" name="date" class="form-control" id="inputEmail" placeholder="date">
                         </div>
                       </div>
                       <div class="form-group row">
-                        <label for="inputName2" class="col-sm-2 col-form-label">Name</label>
+                        <label for="inputName2" class="col-sm-2 col-form-label">Quantity</label>
                         <div class="col-sm-10">
-                          <input type="text" class="form-control" id="inputName2" placeholder="Name">
+                          <input type="text" name="quantity" class="form-control" id="inputName2" placeholder="quantity">
                         </div>
                       </div>
-                      <div class="form-group row">
-                        <label for="inputExperience" class="col-sm-2 col-form-label">Experience</label>
+                       <div class="form-group row">
+                        <label for="inputName2" class="col-sm-2 col-form-label">unit cost</label>
                         <div class="col-sm-10">
-                          <textarea class="form-control" id="inputExperience" placeholder="Experience"></textarea>
+                          <input type="text" name="unit" class="form-control" id="inputName2" placeholder="unit">
                         </div>
                       </div>
                       <div class="form-group row">
-                        <label for="inputSkills" class="col-sm-2 col-form-label">Skills</label>
+                        <label for="inputSkills" class="col-sm-2 col-form-label">amount</label>
                         <div class="col-sm-10">
-                          <input type="text" class="form-control" id="inputSkills" placeholder="Skills">
+                          <input type="text" name="amount" class="form-control" id="inputSkills" placeholder="amount">
                         </div>
                       </div>
                       <div class="form-group row">
+                        <label for="inputSkills" class="col-sm-2 col-form-label">image</label>
+                        <div class="col-sm-10">
+                          <input type="file" name="image" class="form-control" id="inputSkills" placeholder="image">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputExperience" class="col-sm-2 col-form-label">Report by</label>
+                        <div class="col-sm-10">
+                          <textarea class="form-control" name="report" id="inputExperience" placeholder="report by"></textarea>
+                        </div>
+                      </div>
+                      
+                      </div>
+                      
+                      <div class="form-group row">
+                      <input type="hidden" name="deleted" value="N" class="form-control">
                         <div class="offset-sm-2 col-sm-10">
-                          <div class="checkbox">
-                            <label>
-                              <input type="checkbox"> I agree to the <a href="#">terms and conditions</a>
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <div class="offset-sm-2 col-sm-10">
-                          <button type="submit" class="btn btn-danger">Submit</button>
+                          <button type="submit" class="btn btn-primary">Submit</button>
                         </div>
                       </div>
                     </form>

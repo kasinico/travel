@@ -20,7 +20,7 @@ class CreateIncomesTable extends Migration
             $table->string('quantity');
             $table->string('unit');
             $table->string('amount');
-            $table->string('image');
+            $table->string('image')->NULL;
             $table->string('report');
             $table->timestamps();
         });

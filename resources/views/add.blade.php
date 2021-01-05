@@ -124,15 +124,7 @@
         
 
         <div class="row">
-                    
-                
-            
-
-
-                <!--fuel-->
-                            
-
-                <input type="hidden" name="deleted" value="N" class="form-control">
+         <input type="hidden" name="deleted" value="N" class="form-control">
 
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary">Save</button>
