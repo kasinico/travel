@@ -3,6 +3,7 @@
 
 <!-- Mirrored frte Copier/3.x [XR&CO'2014], Fri, 08 Jun 2018 07:30:06 GMT -->
 <head>
+<title>Farm Cash Book | @yield('title')</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -42,9 +43,11 @@
   <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  
+  
 
 </head>
-        <title>Farm Cash Book | BSG</title>
+        
 
 
     <body data-ma-theme="indigo">

@@ -1,9 +1,11 @@
 ﻿@extends('layouts.web')
-
+@section('title', 'dashboard')
 @section('content')
+
 
 <section class="content">
     <header class="content__title">
+    <title> dashboard1</title>
         <h1>Farm Cash Book Dashboard</h1>
         <small>Welcome to your Farm Cash Book System</small>
         

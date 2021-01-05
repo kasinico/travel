@@ -12,7 +12,7 @@
         
         <h1><a href="{{ url('/dashboard') }}">FARM CASH BOOK </a></h1></div>
         <br><?php
-                echo "Time" .
+                echo "Time " .
                 date("h:i:sa");
              ?>
         

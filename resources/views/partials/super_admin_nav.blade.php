@@ -120,17 +120,9 @@
 
             
 
-            <li class="navigation__sub">
-                <a href="#"><i class="zmdi zmdi-trending-up"></i> Charts</a>
-
-                <ul>
-                    <li><a href="flot-charts.html">Flot</a></li>
-                    <li><a href="other-charts.html">Other Charts</a></li>
-                </ul>
-            </li>
+           
             <li><a href="{{ url('/calendar') }}"><i class="zmdi zmdi-calendar"></i> Calendar</a></li>
 
-            <li><a href="photo-gallery.html"><i class="zmdi zmdi-image"></i> Photo Gallery</a></li>
 
             <li class="navigation__sub">
                 <a href="#"><i class="zmdi zmdi-collection-item"></i> Sample Pages</a>

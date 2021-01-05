@@ -1,5 +1,5 @@
 @extends('layouts.web')
-
+@section('title','All records of Input')
 @section('content')
 <div class="page-loader">
     <div class="page-loader__spinner">
@@ -10,6 +10,7 @@
 </div>
 <section class="content">
     <header class="content__title">
+    <title>All records of Input costs</title>
 	<link rel="stylesheet" href="{{ asset('css/app.min.css') }}">
 
         <h1>All records of Input costs</h1>
@@ -35,7 +36,7 @@
 
             <div class="table-responsive">
 			
-              <table id="data-table" class="table table-bordered">
+              <table id="example1" class="table table-bordered table-hover">
 			   
 			  
                               <thead class="thead-default">
@@ -89,6 +90,58 @@
 
                               @endforeach
                           </table>
+                          <!-- Content Wrapper. Contains page content -->
+  <div class="container">
+    <!-- Content Header (Page header) -->
+    
+
+    <!-- Main content -->
+    <section class="container">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">DataTable with minimal features & hover style</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table id="example2" class="table table-bordered table-hover">
+                  <thead>
+                  <tr>
+                    <th>Rendering engine</th>
+                    <th>Browser</th>
+                    <th>Platform(s)</th>
+                    <th>Engine version</th>
+                    <th>CSS grade</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  
+                  
+                  <tr>
+                    <td>Other browsers</td>
+                    <td>All others</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>U</td>
+                  </tr>
+                  </tbody>
+                  <tfoot>
+                  <tr>
+                    <th>Rendering engine</th>
+                    <th>Browser</th>
+                    <th>Platform(s)</th>
+                    <th>Engine version</th>
+                    <th>CSS grade</th>
+                  </tr>
+                  </tfoot>
+                </table>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+
             </div>
         </div>
     </div>
