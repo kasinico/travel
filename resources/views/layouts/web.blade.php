@@ -13,6 +13,20 @@
         <link rel="stylesheet" href="{{ asset('vendors/bower_components/jquery.scrollbar/jquery.scrollbar.css') }}">
         <link rel="stylesheet" href="{{ asset('vendors/bower_components/fullcalendar/dist/fullcalendar.min.css') }}">
         <link rel="stylesheet" href="{{ asset('vendors/bower_components/select2/dist/css/select2.min.css') }}">
+        <!-- Vendor JS Files -->
+  <script src="asset/vendor/jquery/jquery.min.js"></script>
+  <script src="asset/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="asset/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="asset/vendor/php-email-form/validate.js"></script>
+  <script src="asset/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="asset/vendor/venobox/venobox.min.js"></script>
+  <script src="asset/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="asset/vendor/owl.carousel/owl.carousel.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
 
         <!-- App styles -->
         <link rel="stylesheet" href="{{ asset('css/app.min.css') }}">
