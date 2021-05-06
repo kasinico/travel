@@ -63,7 +63,7 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" onclick="alert('youre about to register into the system'!)" class="btn btn-primary">
                                     {{ __('Register') }}
                                 </button>
                             </div>

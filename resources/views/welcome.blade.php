@@ -1,10 +1,18 @@
+
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
+            <!-- Scripts -->
+
+    <script src="{{ asset('js/app.js') }}" defer></script>
+
+    <!-- Styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Farm Cash Book | BSG farm</title>
+        <title>Farm Cash Book | farm</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
@@ -81,7 +89,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Farm Cash Book
                 </div>
 
                 <div class="links">
@@ -94,14 +102,7 @@
             </div>
         </div>
     </body>
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Sailor</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        Designed by <a href="#">kasi</a>
-      </div>
-    </div>
+    
   </footer><!-- End Footer -->
 </html>
 
@@ -113,7 +114,6 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Sailor Bootstrap Template - Index</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -136,12 +136,6 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Sailor - v2.2.0
-  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -150,14 +144,14 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo"><a href="index.html">Sailor</a></h1>
+      <h1 class="logo"><a href="index.html">FCB</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav class="nav-menu d-none d-lg-block">
 
         <ul>
-          <li class="active"><a href="index.html">Home</a></li>
+          <li class="active"><a href="{{ url('/home') }}">Home</a></li>
 
           <li class="drop-down"><a href="#">About</a>
             <ul>
@@ -181,16 +175,31 @@
           <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="pricing.html">Pricing</a></li>
           <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="{{ url('/contact') }}">Contact Us </a></li>
 
         </ul>
 
       </nav><!-- .nav-menu -->
 
-      <a href="index.html" class="get-started-btn ml-auto">Get Started</a>
+      @if (Route::has('login'))
+                <div class="top-right links">
+                    @auth
+                        <a href="{{ url('/home') }}" class="get-started-btn ml-auto">Home</a>
+                    @else
+                        <a href="{{ route('login') }}" class="get-started-btn ml-auto">Login</a>
+
+                        @if (Route::has('register'))
+                            <a href="{{ route('register') }}" class="get-started-btn ml-auto">Register</a>
+                        @endif
+                    @endauth
+                </div>
+            @endif
+            
+
 
     </div>
   </header><!-- End Header -->
+
 
   <!-- ======= Hero Section ======= -->
   <section id="hero">
@@ -204,7 +213,7 @@
         <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.jpg)">
           <div class="carousel-container">
             <div class="container">
-              <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Sailor</span></h2>
+              <h2 class="animate__animated animate__fadeInDown">Welcome to <span>FarmCashBook</span></h2>
               <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
               <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
             </div>
@@ -287,7 +296,7 @@
         <div class="row">
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
+            <img src="assets/img/3.jpg" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
@@ -535,7 +544,7 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="footer-info">
-              <h3>Sailor</h3>
+              <h3>AltechDesign</h3>
               <p>
                 A108 Adam Street <br>
                 NY 535022, USA<br><br>
@@ -589,14 +598,15 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Sailor</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>KasiryeN</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/sailor-free-bootstrap-theme/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <a href="https://twitter.com/kasiryen.com">KasiryeN</a>
+        
       </div>
     </div>
   </footer><!-- End Footer -->

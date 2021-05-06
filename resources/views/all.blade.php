@@ -10,6 +10,12 @@
 </div>
 <section class="content">
     <header class="content__title">
+    <!-- Scripts -->
+
+    <script src="{{ asset('js/app.js') }}" defer></script>
+
+    <!-- Styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <title>All records of Input costs</title>
 	<link rel="stylesheet" href="{{ asset('css/app.min.css') }}">
 

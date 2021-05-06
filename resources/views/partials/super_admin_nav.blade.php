@@ -73,6 +73,7 @@
                 <ul>
                     <li><a href="{{url ('/add') }}">Add Input Items</a></li>
                     <li><a href="{{url ('/all') }}">View Input items </a></li>
+                    <li><a href="{{url ('/create') }}"> File Upload </a></li>
                 </ul>
             </li>
 

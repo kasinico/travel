@@ -3,6 +3,13 @@
 
 <!-- Mirrored frte Copier/3.x [XR&CO'2014], Fri, 08 Jun 2018 07:30:06 GMT -->
 <head>
+<!-- Scripts -->
+
+    <script src="{{ asset('js/app.js') }}" defer></script>
+
+    <!-- Styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    
 <title>Farm Cash Book | @yield('title')</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
