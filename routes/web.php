@@ -42,6 +42,16 @@ Route::get('/add', function(){
 	return view('add');
 });
 
+Route::get('/contact', function(){
+	return view('contact');
+});
+
+Route::get('file','FileController@create');
+
+Route::post('file','FileController@store');
+Route::get('/create', function(){
+	return view('create');
+});
 
 Route::get('user/{id}', 'ShowProfile');
 // If you want route to just show a certain view, don't create a Controller method, just use

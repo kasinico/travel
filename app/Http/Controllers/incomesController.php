@@ -70,16 +70,25 @@ class incomesController extends Controller
           $report = $request->report;
 
 
+          
+          if($request->hasfile('image'))
 
-          
-          /*if(Input::file('image')->isValid()){
-            $extension = Input::file('image')->getClientOriginalExtension();
-            $image_name = Input::file('image')->getClientOriginalExtension();
-            $fileName = time().'_.'.$image_name;
-            Input::file('image')->move(public_path('uploads').'/',$fileName);
-            */
-            //check for file
-          
+         {
+
+            foreach($request->file('image') as $image)
+
+            {
+
+                $name = time().'.'.$image->extension();
+
+                $image->move(public_path().'/files/', $image);  
+                $image = $image;
+
+            }
+
+         }
+
+
 
             //insert array
 
