@@ -12,7 +12,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Farm Cash Book | farm</title>
+        <title>Farm Cash Book | The leading farm records keeping platform in East Africa</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
@@ -71,47 +71,10 @@
             }
         </style>
     </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Farm Cash Book
-                </div>
-
-                <div class="links">
-                   
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-                
-            </div>
-        </div>
-    </body>
     
-  </footer><!-- End Footer -->
-</html>
-
-
-<!DOCTYPE html>
-<html lang="en">
 
 <head>
-  <meta charset="utf-8">
+  <!--<meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <meta content="" name="description">
@@ -119,7 +82,7 @@
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">-->
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -138,7 +101,6 @@
 
 </head>
 
-<body>
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top ">
@@ -154,7 +116,7 @@
           <li class="active"><a href="{{ url('/home') }}">Home</a></li>
 
           <li class="drop-down"><a href="#">About</a>
-            <ul>
+            <!--<ul>
               <li><a href="about.html">About Us</a></li>
               <li><a href="team.html">Team</a></li>
               <li><a href="testimonials.html">Testimonials</a></li>
@@ -168,13 +130,13 @@
                   <li><a href="#">Deep Drop Down 5</a></li>
                 </ul>
               </li>
-            </ul>
+            </ul>-->
           </li>
 
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="blog.html">Blog</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Blog</a></li>
           <li><a href="{{ url('/contact') }}">Contact Us </a></li>
 
         </ul>

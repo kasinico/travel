@@ -48,7 +48,7 @@
   <main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
-    <section id="breadcrumbs" class="breadcrumbs">
+    <!--<section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
@@ -56,7 +56,7 @@
         </div>
 
       </div>
-    </section><!-- End Breadcrumbs -->
+    </section>End Breadcrumbs -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
@@ -168,18 +168,18 @@
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Services</h4>
-            <ul>
+            <!--<ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
             </ul>
-          </div>
+          </div>-->
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <p>Sign up with your email address to receive news and updates.</p>
             <form action="" method="post">
               <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>
@@ -199,7 +199,6 @@
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/sailor-free-bootstrap-theme/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
   </footer><!-- End Footer -->
